@@ -1,0 +1,2 @@
+const contries = { MX: 'Mexico', CO: 'Colombia', AR: 'Argentina', PE: 'Peru' };
+console.log(Object.entries(contries)); // [ [ 'MX', 'Mexico' ], [ 'CO', 'Colombia' ], [ 'AR', 'Argentina' ], [ 'PE', 'Peru' ] ]
