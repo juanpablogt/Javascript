@@ -21,4 +21,4 @@ console.log(miName.toUpperCase());
 console.log(miLastName.toLowerCase());
 
 // substring
-console.log(miName.substring(0, 4)); // Ju
+console.log(miName.substring(0, 4)); 
