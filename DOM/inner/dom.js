@@ -10,3 +10,16 @@ lista.insertAdjacentHTML("beforebegin", "<li>Elemento 3</li>");
 lista.insertAdjacentHTML("afterend", "<li>Elemento 4</li>");
 
 lista.removeChild(lista.firstElementChild);
+
+const contenido = document.getElementById("content");
+contenido.addEventListener("mouseover", () => {
+  contenido.style.backgroundColor = "red";
+});
+contenido.addEventListener("mouseout", () => {
+  contenido.style.backgroundColor = "yellow";
+});
+
+const boton = document.getElementById("boton");
+boton.addEventListener("click", () => {
+  alert("¡Botón clickeado!");
+});
