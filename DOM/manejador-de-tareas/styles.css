@@ -1,0 +1,156 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#task-manager {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+}
+
+#task-list li {
+    padding: 0.75rem 1rem;
+    background: #f9f9f9;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+#task-list li:hover {
+    background: #eaeaea;
+}
+
+.delete-btn, .edit-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.delete-btn {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #b02a37;
+}
+
+.edit-btn {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+#theme-toggle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#toggle-theme-btn {
+    padding: 0.5rem 1rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggle-theme-btn:hover {
+    background-color: #1d2124;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+
+body.dark #task-manager {
+    background-color: #262626;
+}
+
+body.dark #task-list li {
+    background: #333;
+}
+
+body.dark #task-list li:hover {
+    background: #444;
+}
+
+body.dark #task-input {
+    background-color: #222;
+    color: #eee;
+    border: 1px solid #444;
+}
+
+body.dark form button {
+    background-color: #28a745;
+}
+
+body.dark form button:hover {
+    background-color: #218838;
+}
